@@ -119,45 +119,6 @@ const stats = [
    COMPONENTS
 ────────────────────────────────────────────── */
 
-function Navbar() {
-  return (
-    <header className="fixed top-0 inset-x-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100 shadow-sm">
-      <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        {/* Logo */}
-        <Link href="/" className="flex items-center gap-2">
-          <span className="text-2xl">🇬🇧</span>
-          <span className="text-xl font-bold text-indigo-700 tracking-tight">
-            English<span className="text-emerald-500">Ora</span>
-          </span>
-        </Link>
-
-        {/* Nav links */}
-        <nav className="hidden md:flex items-center gap-7 text-sm font-medium text-slate-600">
-          <Link href="#features" className="hover:text-indigo-600 transition-colors">Features</Link>
-          <Link href="#testimonials" className="hover:text-indigo-600 transition-colors">Reviews</Link>
-          <Link href="#pricing" className="hover:text-indigo-600 transition-colors">Pricing</Link>
-        </nav>
-
-        {/* CTAs */}
-        <div className="flex items-center gap-3">
-          <Link
-            href="#"
-            className="hidden sm:inline text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors"
-          >
-            Log In
-          </Link>
-          <Link
-            href="#"
-            className="bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-4 py-2 rounded-full transition-colors"
-          >
-            Start for Free
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
-
 function Hero() {
   return (
     <section className="pt-32 pb-24 px-6 bg-gradient-to-br from-indigo-50 via-white to-emerald-50 text-center relative overflow-hidden">
@@ -481,7 +442,6 @@ function Footer() {
 export default function Home() {
   return (
     <>
-      <Navbar />
       <main className="flex-1">
         <Hero />
         <Stats />
